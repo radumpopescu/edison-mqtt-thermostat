@@ -1,0 +1,23 @@
+{
+  "name": "mqtt-thermostat",
+  "version": "1.0.0",
+  "description": "Mqtt Enabled thermostat",
+  "main": "main.js",
+  "dependencies": {
+    "edison-io": "^0.10.0",
+    "johnny-five": "^0.10.6",
+    "mqtt": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mqtt",
+    "thermostat",
+    "edison",
+    "arduino"
+  ],
+  "author": "Radu Popescu",
+  "license": "ISC"
+}
