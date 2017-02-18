@@ -1,0 +1,13 @@
+var config = {};
+
+config.average_temp_seconds = 10;
+config.minimum_temp_difference = 0.15;
+
+config.mqtt_host = "mqtt://host";
+
+config.relay_topic = "relay/topic";
+config.relay_on_message = "on";
+config.relay_port = 2;
+config.temp_topic = "temperature/topic";
+
+module.exports = config;
