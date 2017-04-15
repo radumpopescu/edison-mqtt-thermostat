@@ -1,14 +1,19 @@
 'use strict'
 var mqtt = require('mqtt')
 
-function Mqtt(host, subscriptions){
+function Mqtt(host, user, pass, subscriptions){
     this.host = host;
+    this.user = user;
+    this.pass = pass;
     this.subscriptions = subscriptions;
     this.connect();
 }
 
 Mqtt.prototype.connect = function(){
-    this.client = mqtt.connect(this.host);
+    this.client = mqtt.connect(this.host, {
+        username: this.user,
+        password: this.pass
+    });
     this.client.on('connect', () => {
         this.subscribe();
 

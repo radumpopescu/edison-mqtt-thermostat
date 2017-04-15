@@ -9,7 +9,7 @@ var subscriptions = [
         "cb": onRelayMessage
     }
 ];
-var mqt = new Mqtt(config.mqtt_host, subscriptions);
+var mqt = new Mqtt(config.mqtt_host, config.mqtt_user, config.mqtt_pass, subscriptions);
 var grove = new Grove(thermoCallback);
 
 var lastTempReport = {
